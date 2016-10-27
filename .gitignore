@@ -2,5 +2,6 @@
 /phpcs.xml
 /phpunit.xml
 .idea/*
+*.iml
 /vendor/
 composer.lock
