@@ -6,6 +6,12 @@
         "phpcs",
         "standards"
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/magento/marketplace-eqp"
+        }
+    ],
     "homepage": "http://www.squizlabs.com/php-codesniffer",
     "license": "BSD-3-Clause",
     "authors": [
@@ -48,17 +54,21 @@
             "CodeSniffer/Standards/PSR1/Sniffs/",
             "CodeSniffer/Standards/PSR2/Sniffs/",
             "CodeSniffer/Standards/Squiz/Sniffs/",
-            "CodeSniffer/Standards/Zend/Sniffs/"
+            "CodeSniffer/Standards/Zend/Sniffs/",
+            "CodeSniffer/Standards/MEQP1/Sniffs/",
+            "CodeSniffer/Standards/MEQP2/Sniffs/"
         ]
     },
     "require": {
         "php": ">=5.1.2",
         "ext-tokenizer": "*",
         "ext-xmlwriter": "*",
-        "ext-simplexml": "*"
+        "ext-simplexml": "*",
+        "magento/marketplace-eqp": "1.*"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.0"
+        "phpunit/phpunit": "~4.0",
+        "clue/phar-composer": "1.0.*"
     },
     "bin": [
         "scripts/phpcs",
