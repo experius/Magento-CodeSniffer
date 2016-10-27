@@ -5,3 +5,8 @@
 *.iml
 /vendor/
 composer.lock
+
+# Ignore magento standards in source files.
+CodeSniffer/Standards/AbstractSniffs
+CodeSniffer/Standards/Utils
+CodeSniffer/Standards/MEQP*
