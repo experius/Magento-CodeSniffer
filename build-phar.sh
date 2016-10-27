@@ -14,4 +14,4 @@ cp -R vendor/magento/marketplace-eqp/MEQP1 CodeSniffer/Standards/
 cp -R vendor/magento/marketplace-eqp/MEQP2 CodeSniffer/Standards/
 
 # Build phar.
-php vendor/bin/phar-composer build phpcs.phar
+php vendor/bin/phar-composer build && mv php_codesniffer.phar phpcs.phar

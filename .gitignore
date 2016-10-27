@@ -10,3 +10,6 @@ composer.lock
 CodeSniffer/Standards/AbstractSniffs
 CodeSniffer/Standards/Utils
 CodeSniffer/Standards/MEQP*
+
+# Ignore build phar
+/phpcs.phar
