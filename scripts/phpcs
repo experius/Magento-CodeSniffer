@@ -22,4 +22,8 @@ if (is_file(dirname(__FILE__).'/../CodeSniffer/CLI.php') === true) {
 }
 
 $cli = new PHP_CodeSniffer_CLI();
-$cli->runphpcs();
+if (getenv("CODESNIFFER_PHPCBF") !== false) {
+    $cli->runphpcbf();
+} else {
+    $cli->runphpcs();
+}
