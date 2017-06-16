@@ -81,7 +81,7 @@ class Squiz_Tests_Commenting_FunctionCommentUnitTest extends AbstractSniffUnitTe
                    226 => 1,
                    227 => 1,
                    230 => 2,
-                   232 => 1,
+                   232 => 2,
                    246 => 1,
                    248 => 4,
                    261 => 1,
@@ -93,7 +93,7 @@ class Squiz_Tests_Commenting_FunctionCommentUnitTest extends AbstractSniffUnitTe
                    280 => 1,
                    281 => 1,
                    284 => 1,
-                   286 => 2,
+                   286 => 7,
                    294 => 1,
                    302 => 1,
                    312 => 1,
@@ -111,27 +111,35 @@ class Squiz_Tests_Commenting_FunctionCommentUnitTest extends AbstractSniffUnitTe
                    669 => 1,
                    744 => 1,
                    748 => 1,
+                   767 => 1,
                    789 => 1,
                    792 => 1,
                    794 => 1,
                    797 => 1,
                    801 => 1,
+                   828 => 1,
+                   840 => 1,
+                   852 => 1,
+                   864 => 1,
                   );
 
         // The yield tests will only work in PHP versions where yield exists and
         // will throw errors in earlier versions.
         if (PHP_VERSION_ID < 50500) {
             $errors[676] = 1;
+            $errors[874] = 1;
         } else {
             $errors[688] = 1;
         }
 
         // Scalar type hints only work from PHP 7 onwards.
         if (PHP_VERSION_ID >= 70000) {
-            $errors[17]  = 1;
+            $errors[17]  = 3;
+            $errors[128] = 1;
             $errors[143] = 3;
             $errors[161] = 2;
             $errors[201] = 1;
+            $errors[232] = 7;
             $errors[363] = 3;
             $errors[377] = 1;
             $errors[575] = 2;

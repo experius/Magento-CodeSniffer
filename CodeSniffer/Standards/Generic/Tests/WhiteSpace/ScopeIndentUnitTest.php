@@ -33,7 +33,7 @@ class Generic_Tests_WhiteSpace_ScopeIndentUnitTest extends AbstractSniffUnitTest
 
 
     /**
-     * Get a list of CLI values to set befor the file is tested.
+     * Get a list of CLI values to set before the file is tested.
      *
      * @param string $testFile The name of the file being tested.
      *
@@ -154,11 +154,15 @@ class Generic_Tests_WhiteSpace_ScopeIndentUnitTest extends AbstractSniffUnitTest
                 823  => 1,
                 858  => 1,
                 879  => 1,
-                1156 => 1,
-                1164 => 1,
-                1169 => 1,
-                1171 => 1,
-                1174 => 1,
+                1163 => 1,
+                1185 => 1,
+                1190 => 1,
+                1192 => 1,
+                1195 => 1,
+                1199 => 1,
+                1200 => 1,
+                1201 => 1,
+                1202 => 1,
                );
 
     }//end getErrorList()
